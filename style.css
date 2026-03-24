@@ -1,0 +1,64 @@
+/* Custom Global Styles */
+body {
+    background-color: #0b0b0d; /* Deep dark background */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* TC04: Branding Style */
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #00d4ff !important;
+    text-transform: uppercase;
+}
+
+/* TC03 & TC09: Section Spacing and Layout */
+.hero-section {
+    padding: 100px 0;
+    background: radial-gradient(circle at top right, #1a1a2e, #0b0b0d);
+}
+
+/* TC07: Button and Component Overrides */
+.btn-primary {
+    background-color: #00d4ff;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0099bb;
+    transform: translateY(-2px);
+}
+
+.card {
+    background-color: #16161a;
+    color: #fff;
+    border-radius: 15px;
+}
+
+/* Form Styling */
+.form-control, .form-select {
+    background-color: #23232b;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #2a2a35;
+    color: #fff;
+    border-color: #00d4ff;
+    box-shadow: 0 0 0 0.25rem rgba(0, 212, 255, 0.25);
+}
+
+/* TC10: Cross-device fine-tuning */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+}
